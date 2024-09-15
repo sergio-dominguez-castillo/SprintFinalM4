@@ -13,7 +13,7 @@
         android:layout_width="344dp"
         android:layout_height="321dp"
         android:layout_marginTop="28dp"
-        android:background="@drawable/KungFuPanda4Principal"
+        android:background="@drawable/kungfupanda4principal"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
@@ -59,7 +59,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/KungFuPanda41"
+                app:srcCompat="@drawable/kungfupanda41"
                 android:scaleType="centerCrop"/>
 
             <ImageView
@@ -67,7 +67,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
-                app:srcCompat="@drawable/KungFuPanda42"
+                app:srcCompat="@drawable/kungfupanda42"
                 android:scaleType="centerCrop"/>
 
         </LinearLayout>
