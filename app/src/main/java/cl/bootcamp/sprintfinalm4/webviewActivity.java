@@ -23,6 +23,15 @@ public class webviewActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_webview);
 
+
+
+
+
+
+
+
+
+
         binding = ActivityWebviewBinding.inflate(getLayoutInflater());
         View view = binding.getRoot();
         setContentView(view);

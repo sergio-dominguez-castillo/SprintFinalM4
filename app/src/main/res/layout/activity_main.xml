@@ -47,7 +47,7 @@
             android:id="@+id/btnopen"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="sbtnopen" />
+            android:text="@string/sbtnopen" />
 
         <LinearLayout
             android:layout_width="match_parent"

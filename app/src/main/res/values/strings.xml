@@ -3,5 +3,9 @@
 
     <string name="stvtitulo">KUNG FU PANDA 4</string>
     <string name="stbtitulo">Web View</string>
+    <string name="sbtnopen">Abrir</string>
+    <string name="sbtwebview">Web View</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>
