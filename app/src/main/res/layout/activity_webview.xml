@@ -7,15 +7,6 @@
     android:layout_height="match_parent"
     tools:context=".webviewActivity">
 
-    <FrameLayout
-        android:id="@+id/flContainer"
-        android:layout_width="match_parent"
-        android:layout_height="570dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"></FrameLayout>
-
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
@@ -30,15 +21,35 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0"/>
 
-    <WebView
-        android:id="@+id/wvContainer"
+    <FrameLayout
+        android:id="@+id/flContainer"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginTop="300dp"
+        android:layout_height="570dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <WebView
+            android:id="@+id/wvContainer"
+            android:layout_width="300dp"
+            android:layout_height="400dp"
+            android:layout_marginTop="300dp"
+            />
+    </FrameLayout>
+
+
+    <Button
+        android:id="@+id/btnWebView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sbtwebview"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="1.0"/>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -9,6 +9,8 @@ import android.webkit.WebViewClient;
 
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 import cl.bootcamp.sprintfinalm4.databinding.ActivityWebviewBinding;
 
@@ -16,6 +18,8 @@ import cl.bootcamp.sprintfinalm4.databinding.ActivityWebviewBinding;
 public class webviewActivity extends AppCompatActivity {
 
     ActivityWebviewBinding binding;
+    FragmentTransaction transaction;
+    Fragment primaryFragment, oneFragment;
 
 
     @Override
@@ -24,18 +28,10 @@ public class webviewActivity extends AppCompatActivity {
         setContentView(R.layout.activity_webview);
 
 
-
-
-
-
-
-
-
-
         binding = ActivityWebviewBinding.inflate(getLayoutInflater());
         View view = binding.getRoot();
         setContentView(view);
-        // web view
+
         binding.wvContainer.getSettings().setJavaScriptEnabled(true);
 
         binding.wvContainer.setWebViewClient(new WebViewClient(){
@@ -44,9 +40,22 @@ public class webviewActivity extends AppCompatActivity {
                 return false;
             }
         });
-
         binding.wvContainer.loadUrl("https://www.youtube.com/watch?v=JK-Rws_pB4w");
 
+        primaryFragment = new PrimaryFragment();
+
+        transaction = getSupportFragmentManager().beginTransaction();
+        transaction.add(R.id.flContainer, primaryFragment).commit();
+
+
+        binding.btnWebView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+
+            }
+
+        });
 
 
         // toolbar

@@ -4,14 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/kungfupanda4principal"
     tools:context=".PrimaryFragment">
-
-    <Button
-        android:id="@+id/btnWebView"
+    <!--    android:background="@drawable/kungfupanda4principal"-->
+    <ImageView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/sbtwebview" />
+        android:layout_height="match_parent"
+        android:background="@drawable/kungfupanda4principal"
+        android:scaleType="centerCrop"/>
 
 
 </FrameLayout>
