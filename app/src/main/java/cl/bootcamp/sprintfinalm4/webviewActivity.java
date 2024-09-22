@@ -47,7 +47,6 @@ public class webviewActivity extends AppCompatActivity {
         transaction = getSupportFragmentManager().beginTransaction();
         transaction.add(R.id.flContainer, primaryFragment).commit();
 
-
         binding.btnWebView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
