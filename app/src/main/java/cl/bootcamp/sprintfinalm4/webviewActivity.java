@@ -50,6 +50,7 @@ public class webviewActivity extends AppCompatActivity {
         binding.btnWebView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                binding.wvContainer.loadUrl("https://www.dreamworks.com/movies/kung-fu-panda-4");
 
 
             }
